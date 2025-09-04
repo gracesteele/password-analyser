@@ -1,0 +1,31 @@
+body {
+    background-color: #e6c9ff;
+    font-family: "Pixelify Sans", Calibri, sans-serif;
+    font-size: 100%;
+}
+
+div {
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+.container h1 {
+    font-weight: 700;
+    font-size: 3.125em;
+}
+
+.container p {
+    font-size: 1.25em;
+}
+
+.password {
+    padding: 20px;
+}
+
+.password .password-promt {
+    font-weight: 500;
+    font-size: 5em;
+}

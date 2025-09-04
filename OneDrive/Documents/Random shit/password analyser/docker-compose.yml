@@ -1,0 +1,21 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    working_dir: /main
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    # volumes:
+    #   - ./frontend:/app
+    depends_on:
+      - backend
